@@ -29,7 +29,7 @@ services:
       MYSQL_DATABASE      : ejercicio_3
     volumes               :
       - ./databases:/var/lib/mysql
-      # - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./tableXML.sql:/docker-entrypoint-initdb.d/init.sql
     networks              :
       - app_network
     ports                 :
