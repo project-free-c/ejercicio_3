@@ -1,3 +1,4 @@
+--Usar el schema "Ejercicio_3"
 use ejercicio_3;
 -- Creación de la tabla TIPOENVIO
 CREATE TABLE IF NOT EXISTS TIPOENVIO (
