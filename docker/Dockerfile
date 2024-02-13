@@ -7,3 +7,4 @@ RUN apt-get update && \
 RUN docker-php-ext-install mysqli pdo pdo_mysql
 WORKDIR /code
 # CMD COMPOSER_PROCESS_TIMEOUT=2000 composer install 
+
