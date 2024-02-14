@@ -233,6 +233,7 @@ body{
 <div class="wrapper">
   <h1>Selecciona tu archivo .XML</h1>
   <input accept="text/xml" type="file" id="files" class="inputFile" name="files[]" />
+  <input type="text" id="fileNameTextbox" readonly placeholder="Nombre del archivo seleccionado" />
   <button>Enviar</button>
 </div>
 
@@ -240,6 +241,59 @@ body{
         <h2>Resultados</h2>
     {% endif %}
 
+<script>
+var img2data = (function() {
+  'use strict';
+  return {
+    // ... (Tu código actual)
+    convert: function() {
+      // vars 
+      var fls = this.qS('#files'),
+          fileNameTextbox = this.qS('#fileNameTextbox'),  // Nueva línea
+          output = this.qS('.output'),
+          overlay = this.qS('.overlay'),
+          close_overlay = this.qS('.close_overlay');
+      
+      fls.addEventListener('change', function(e) {
+        var file = fls.files[0],
+            txtType = /text.*/, // all text files
+            imgType = /image.*/, // all image files
+            fR = new FileReader(); // fileReader start
+        
+        // Nueva línea: Actualizar el valor del textbox con el nombre del archivo
+        fileNameTextbox.value = file.name;
+
+        fR.onload = function(e) {
+          // if text 
+          if (file.type.match(txtType)) {
+            // ... (Tu código actual)
+          // if image
+          } else if(file.type.match(imgType)) {
+            // ... (Tu código actual)
+           // if not support
+          } else {
+            output.innerHTML = '<h1>Sorry the file is not supported!</h1>';
+          }
+        };
+        
+        // on loaded add events
+        fR.onloadend = function(e) {
+          overlay.classList.add('show'); // add class
+          close_overlay.onclick = function(){
+            overlay.classList.remove('show'); // remove class
+            fls.value = ''; // remove files
+            fileNameTextbox.value = '';  // Nueva línea: Limpiar el valor del textbox al cerrar el overlay
+          };
+        };  
+        // convert to data uri
+        fR.readAsDataURL(file);	
+      });
+    }
+  };
+})();
+
+img2data.run();
+</script>
 
 <script>
 var img2data = (function() {
