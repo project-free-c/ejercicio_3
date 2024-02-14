@@ -9,10 +9,4 @@
 /vendor/
 /bin/
 /composer.phar
-<<<<<<< HEAD
 /databases
-=======
-/databases/* 
-/ArchivosXML
-
->>>>>>> bc8a11a5a8acbc2ae769c320851210407114bcc7
