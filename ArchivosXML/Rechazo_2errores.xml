@@ -1,0 +1,479 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <DIN xmlns:ns10="http://www.aduana.cl/xml/esquemas/ITEM" xmlns:ns11="http://www.aduana.cl/xml/esquemas/OBSERVACIONITEM" xmlns:ns12="http://www.aduana.cl/xml/esquemas/OBSERVACIONESITEM" xmlns:ns13="http://www.aduana.cl/xml/esquemas/CUENTAITEM" xmlns:ns14="http://www.aduana.cl/xml/esquemas/CUENTASITEM" xmlns:ns15="http://www.aduana.cl/xml/esquemas/INSUMO" xmlns:ns16="http://www.aduana.cl/xml/esquemas/INSUMOS" xmlns:ns17="http://www.aduana.cl/xml/esquemas/ANEXA" xmlns:ns18="http://www.aduana.cl/xml/esquemas/ANEXAS" xmlns:ns19="http://www.aduana.cl/xml/esquemas/ITEMS" xmlns:ns2="http://www.aduana.cl/xml/esquemas/LOG" xmlns:ns20="http://www.aduana.cl/xml/esquemas/VISTOBUENO" xmlns:ns21="http://www.aduana.cl/xml/esquemas/VISTOSBUENOS" xmlns:ns22="http://www.aduana.cl/xml/esquemas/BULTOS" xmlns:ns23="http://www.aduana.cl/xml/esquemas/BULTO" xmlns:ns24="http://www.aduana.cl/xml/esquemas/CUENTASYVALORES" xmlns:ns25="http://www.aduana.cl/xml/esquemas/CUENTAGIRO" xmlns:ns26="http://www.aduana.cl/xml/esquemas/CUENTASGIRO" xmlns:ns27="http://www.aduana.cl/xml/esquemas/PAGODIFERIDO" xmlns:ns28="http://www.aduana.cl/xml/esquemas/FECHAVENCCUOTA" xmlns:ns29="http://www.aduana.cl/xml/esquemas/CUOTA" xmlns:ns3="http://www.aduana.cl/xml/esquemas/CABEZA" xmlns:ns30="http://www.aduana.cl/xml/esquemas/MONTOCUOTA" xmlns:ns31="http://www.aduana.cl/xml/esquemas/CUOTAS" xmlns:ns32="http://www.aduana.cl/xml/esquemas/ANEXASDIN" xmlns:ns33="http://www.aduana.cl/xml/esquemas/ERRORES" xmlns:ns34="http://www.aduana.cl/xml/esquemas/ERROR" xmlns:ns35="http://www.w3.org/2000/09/xmldsig#" xmlns:ns36="http://www.aduana.cl/xml/esquemas/EnvioDin" xmlns:ns4="http://www.aduana.cl/xml/esquemas/IDENTIFICACION" xmlns:ns5="http://www.aduana.cl/xml/esquemas/REGIMENSUSPENSIVO" xmlns:ns6="http://www.aduana.cl/xml/esquemas/ORIGENTRANSPALMACENAJE" xmlns:ns7="http://www.aduana.cl/xml/esquemas/ANTECEDENTESFINANCIEROS" xmlns:ns8="http://www.aduana.cl/xml/esquemas/TOTALES" xmlns:ns9="http://www.aduana.cl/xml/esquemas/RESPUESTA">
+         <ns36:TIPOENVIO>DIN</ns36:TIPOENVIO>
+         <ns36:LOG>
+            <ns2:SECUENCIA>1</ns2:SECUENCIA>
+            <ns2:ADUANA>39</ns2:ADUANA>
+            <ns2:SOBRE>C47A0208171935</ns2:SOBRE>
+            <ns2:FECHA>08022024</ns2:FECHA>
+            <ns2:HORA>171935</ns2:HORA>
+            <ns2:VAN>VANADU</ns2:VAN>
+            <ns2:ORIGEN>ADUANA</ns2:ORIGEN>
+            <ns2:DESTINO>SANCHEZ ESTAN</ns2:DESTINO>
+         </ns36:LOG>
+         <ns36:CABEZA>
+            <ns3:FORM>15</ns3:FORM>
+            <ns3:NUMIDENTIF>3472325017</ns3:NUMIDENTIF>
+            <ns3:FECVENCI>23022024</ns3:FECVENCI>
+            <ns3:ADU>39</ns3:ADU>
+            <ns3:AGENTE>C47</ns3:AGENTE>
+            <ns3:TPODOCTO>151</ns3:TPODOCTO>
+            <ns3:TIPOINGR>N</ns3:TIPOINGR>
+            <ns3:NUMAUT>999</ns3:NUMAUT>
+            <ns3:FECAUT/>
+            <ns3:GBCOCEN>CERT. ORIGEN NRO. F237461781200492/15.11.2023                         M/N: OOCL HO CHI MINH CITY                                            MANDATO E.P.</ns3:GBCOCEN>
+            <ns3:FECTRA>20112023</ns3:FECTRA>
+            <ns3:FECACEP/>
+            <ns3:AFORO>0</ns3:AFORO>
+            <ns3:FECCONFDI>15112023</ns3:FECCONFDI>
+            <ns3:NUMENCRIP>1</ns3:NUMENCRIP>
+            <ns3:FECCONFEC>21112023</ns3:FECCONFEC>
+            <ns3:NUMIDENACL>0</ns3:NUMIDENACL>
+            <ns3:NUMRES>0</ns3:NUMRES>
+            <ns3:FECRES/>
+            <ns3:IDENTIFICACION>
+               <ns4:NOMBRE>FALABELLA RETAIL S.A.</ns4:NOMBRE>
+               <ns4:DIREC>PDTE RIESCO 5685 OF 401 PISO 4</ns4:DIREC>
+               <ns4:CODCOMUN>13114</ns4:CODCOMUN>
+               <ns4:TIPRUT>3</ns4:TIPRUT>
+               <ns4:RUT>77261280</ns4:RUT>
+               <ns4:DVRUT>K</ns4:DVRUT>
+               <ns4:NOMREPLEG>TOMAS PLATOVSKY MINGO</ns4:NOMREPLEG>
+               <ns4:NUMRUTRL>13548567</ns4:NUMRUTRL>
+               <ns4:DIGVERRL>5</ns4:DIGVERRL>
+               <ns4:NOMCONSIG>SHANGHAI SILK GROUP CO   LTD</ns4:NOMCONSIG>
+               <ns4:DESDIRCON>NO283  WUXING ROAD  SHANGHAI</ns4:DESDIRCON>
+               <ns4:CODPAISCON>336</ns4:CODPAISCON>
+            </ns3:IDENTIFICACION>
+            <ns3:ORIGENTRANSPALMACENAJE>
+               <ns6:PAORIG>336</ns6:PAORIG>
+               <ns6:GPAORIG>CHINA</ns6:GPAORIG>
+               <ns6:PAADQ>336</ns6:PAADQ>
+               <ns6:GPAADQ>CHINA</ns6:GPAADQ>
+               <ns6:VIATRAN>1</ns6:VIATRAN>
+               <ns6:DESPUERT>SHANGAI</ns6:DESPUERT>
+               <ns6:TRANSB/>
+               <ns6:PTOEMB>411</ns6:PTOEMB>
+               <ns6:GPTODESEM>SAN ANTONIO</ns6:GPTODESEM>
+               <ns6:PTODESEM>906</ns6:PTODESEM>
+               <ns6:TPOCARGA>R</ns6:TPOCARGA>
+               <ns6:DESALMAC/>
+               <ns6:ALMACEN/>
+               <ns6:FECALMAC/>
+               <ns6:FECRETIRO/>
+               <ns6:GNOMCIAT>CMA CGM</ns6:GNOMCIAT>
+               <ns6:CODPAISCIA>505</ns6:CODPAISCIA>
+               <ns6:NUMRUTCIA>80992000</ns6:NUMRUTCIA>
+               <ns6:DIGVERCIA>3</ns6:DIGVERCIA>
+               <ns6:NUMMANIF>237446</ns6:NUMMANIF>
+               <ns6:NUMMANIF1/>
+               <ns6:NUMMANIF2/>
+               <ns6:FECMANIF/>
+               <ns6:NUMCONOC>CHN0595266F</ns6:NUMCONOC>
+               <ns6:FECCONOC>17102023</ns6:FECCONOC>
+               <ns6:NOMEMISOR>CMA CGM</ns6:NOMEMISOR>
+               <ns6:NUMRUTEMI>80992000</ns6:NUMRUTEMI>
+               <ns6:DIGVEREMI>3</ns6:DIGVEREMI>
+            </ns3:ORIGENTRANSPALMACENAJE>
+            <ns3:ANTECEDENTESFINANCIEROS>
+               <ns7:GREGIMP>TLC-CHCHI</ns7:GREGIMP>
+               <ns7:REGIMP>96</ns7:REGIMP>
+               <ns7:BCOCOM>0</ns7:BCOCOM>
+               <ns7:CODORDIV>0</ns7:CODORDIV>
+               <ns7:FORMPAGO>1</ns7:FORMPAGO>
+               <ns7:NUMDIAS>120</ns7:NUMDIAS>
+               <ns7:VALEXFAB>0</ns7:VALEXFAB>
+               <ns7:MONEDA>13</ns7:MONEDA>
+               <ns7:MONGASFOB>0</ns7:MONGASFOB>
+               <ns7:CLCOMPRA>5</ns7:CLCOMPRA>
+               <ns7:PAGOGRAV>4</ns7:PAGOGRAV>
+            </ns3:ANTECEDENTESFINANCIEROS>
+            <ns3:TOTALES>
+               <ns8:TOTITEMS>6</ns8:TOTITEMS>
+               <ns8:FOB>34353.00</ns8:FOB>
+               <ns8:TOTHOJAS>2</ns8:TOTHOJAS>
+               <ns8:CODFLE>0</ns8:CODFLE>
+               <ns8:FLETE>565.59</ns8:FLETE>
+               <ns8:TOTBULTOS>1</ns8:TOTBULTOS>
+               <ns8:CODSEG>0</ns8:CODSEG>
+               <ns8:SEGURO>25.78</ns8:SEGURO>
+               <ns8:TOTPESO>2100.70</ns8:TOTPESO>
+               <ns8:CIF>34944.37</ns8:CIF>
+            </ns3:TOTALES>
+            <ns3:RESPUESTA>
+               <ns9:FECHACEPTACION>08022024</ns9:FECHACEPTACION>
+               <ns9:NUMEROENCRIPTADO/>
+               <ns9:ESTADO>RECHAZADO</ns9:ESTADO>
+               <ns9:TIPOSELECCION/>
+            </ns3:RESPUESTA>
+         </ns36:CABEZA>
+         <ns36:ITEMS>
+            <ns19:ITEM>
+               <ns10:NUMITEM>6</ns10:NUMITEM>
+               <ns10:DNOMBRE>HVBLU302PSS     ; BLUSA</ns10:DNOMBRE>
+               <ns10:DMARCA>UNIVERSITY CLUB</ns10:DMARCA>
+               <ns10:DOTRO1>100 VISCOSA, NO PUNTO INCLUYE</ns10:DOTRO1>
+               <ns10:DOTRO2/>
+               <ns10:ATR5/>
+               <ns10:ATR6/>
+               <ns10:SAJUITEM/>
+               <ns10:AJUITEM>0</ns10:AJUITEM>
+               <ns10:CANTMERC>876</ns10:CANTMERC>
+               <ns10:MEDIDA>10</ns10:MEDIDA>
+               <ns10:CODESTUM/>
+               <ns10:PREUNIT>4.52</ns10:PREUNIT>
+               <ns10:ARANCALA>62064021</ns10:ARANCALA>
+               <ns10:NUMCOR>0</ns10:NUMCOR>
+               <ns10:NUMACU>816</ns10:NUMACU>
+               <ns10:CONCUPO>0</ns10:CONCUPO>
+               <ns10:ARANCNAC>62064000</ns10:ARANCNAC>
+               <ns10:CIFITEM>4023.78</ns10:CIFITEM>
+               <ns10:ADVALALA>0.00</ns10:ADVALALA>
+               <ns10:ADVAL>223</ns10:ADVAL>
+               <ns10:VALAD>0.00</ns10:VALAD>
+               <ns10:OBSERVACIONESITEM>
+                  <ns12:OBSERVACIONITEM>
+                     <ns11:CODOBS>99</ns11:CODOBS>
+                     <ns11:DESOBS>00000876.000000 UNIDAD</ns11:DESOBS>
+                  </ns12:OBSERVACIONITEM>
+                  <ns12:OBSERVACIONITEM>
+                     <ns11:CODOBS>20</ns11:CODOBS>
+                     <ns11:DESOBS>MERCANCIAS MAS DE UN MODELO</ns11:DESOBS>
+                  </ns12:OBSERVACIONITEM>
+               </ns10:OBSERVACIONESITEM>
+               <ns10:CUENTASITEM>
+                  <ns14:CUENTAITEM>
+                     <ns13:OTRO>19.00</ns13:OTRO>
+                     <ns13:CTA>178</ns13:CTA>
+                     <ns13:SIGVAL>+</ns13:SIGVAL>
+                     <ns13:VALOR>764.52</ns13:VALOR>
+                  </ns14:CUENTAITEM>
+               </ns10:CUENTASITEM>
+            </ns19:ITEM>
+            <ns19:ITEM>
+               <ns10:NUMITEM>5</ns10:NUMITEM>
+               <ns10:DNOMBRE>F1PAM122OFSS    ; PANTALON</ns10:DNOMBRE>
+               <ns10:DMARCA>MOSSIMO</ns10:DMARCA>
+               <ns10:DOTRO1>92 POLIESTER, 8 ELASTANO, NO P</ns10:DOTRO1>
+               <ns10:DOTRO2/>
+               <ns10:ATR5/>
+               <ns10:ATR6/>
+               <ns10:SAJUITEM/>
+               <ns10:AJUITEM>0</ns10:AJUITEM>
+               <ns10:CANTMERC>1384</ns10:CANTMERC>
+               <ns10:MEDIDA>10</ns10:MEDIDA>
+               <ns10:CODESTUM/>
+               <ns10:PREUNIT>6.28</ns10:PREUNIT>
+               <ns10:ARANCALA>62046311</ns10:ARANCALA>
+               <ns10:NUMCOR>0</ns10:NUMCOR>
+               <ns10:NUMACU>816</ns10:NUMACU>
+               <ns10:CONCUPO>0</ns10:CONCUPO>
+               <ns10:ARANCNAC>62046310</ns10:ARANCNAC>
+               <ns10:CIFITEM>8838.05</ns10:CIFITEM>
+               <ns10:ADVALALA>0.00</ns10:ADVALALA>
+               <ns10:ADVAL>223</ns10:ADVAL>
+               <ns10:VALAD>0.00</ns10:VALAD>
+               <ns10:OBSERVACIONESITEM>
+                  <ns12:OBSERVACIONITEM>
+                     <ns11:CODOBS>99</ns11:CODOBS>
+                     <ns11:DESOBS>00001384.000000 UNIDAD</ns11:DESOBS>
+                  </ns12:OBSERVACIONITEM>
+                  <ns12:OBSERVACIONITEM>
+                     <ns11:CODOBS>20</ns11:CODOBS>
+                     <ns11:DESOBS>MERCANCIAS MAS DE UN MODELO</ns11:DESOBS>
+                  </ns12:OBSERVACIONITEM>
+               </ns10:OBSERVACIONESITEM>
+               <ns10:CUENTASITEM>
+                  <ns14:CUENTAITEM>
+                     <ns13:OTRO>19.00</ns13:OTRO>
+                     <ns13:CTA>178</ns13:CTA>
+                     <ns13:SIGVAL>+</ns13:SIGVAL>
+                     <ns13:VALOR>1679.23</ns13:VALOR>
+                  </ns14:CUENTAITEM>
+               </ns10:CUENTASITEM>
+            </ns19:ITEM>
+            <ns19:ITEM>
+               <ns10:NUMITEM>4</ns10:NUMITEM>
+               <ns10:DNOMBRE>F1BZM125OFSS    ; CHAQUETA</ns10:DNOMBRE>
+               <ns10:DMARCA>MOSSIMO</ns10:DMARCA>
+               <ns10:DOTRO1>88 POLIESTER, 12 ELASTANO, NO</ns10:DOTRO1>
+               <ns10:DOTRO2/>
+               <ns10:ATR5/>
+               <ns10:ATR6/>
+               <ns10:SAJUITEM/>
+               <ns10:AJUITEM>0</ns10:AJUITEM>
+               <ns10:CANTMERC>1026</ns10:CANTMERC>
+               <ns10:MEDIDA>10</ns10:MEDIDA>
+               <ns10:CODESTUM/>
+               <ns10:PREUNIT>10.68</ns10:PREUNIT>
+               <ns10:ARANCALA>62043300</ns10:ARANCALA>
+               <ns10:NUMCOR>0</ns10:NUMCOR>
+               <ns10:NUMACU>816</ns10:NUMACU>
+               <ns10:CONCUPO>0</ns10:CONCUPO>
+               <ns10:ARANCNAC>62043300</ns10:ARANCNAC>
+               <ns10:CIFITEM>11146.30</ns10:CIFITEM>
+               <ns10:ADVALALA>0.00</ns10:ADVALALA>
+               <ns10:ADVAL>223</ns10:ADVAL>
+               <ns10:VALAD>0.00</ns10:VALAD>
+               <ns10:OBSERVACIONESITEM>
+                  <ns12:OBSERVACIONITEM>
+                     <ns11:CODOBS>99</ns11:CODOBS>
+                     <ns11:DESOBS>00001026.000000 UNIDAD</ns11:DESOBS>
+                  </ns12:OBSERVACIONITEM>
+               </ns10:OBSERVACIONESITEM>
+               <ns10:CUENTASITEM>
+                  <ns14:CUENTAITEM>
+                     <ns13:OTRO>19.00</ns13:OTRO>
+                     <ns13:CTA>178</ns13:CTA>
+                     <ns13:SIGVAL>+</ns13:SIGVAL>
+                     <ns13:VALOR>2117.80</ns13:VALOR>
+                  </ns14:CUENTAITEM>
+               </ns10:CUENTASITEM>
+            </ns19:ITEM>
+            <ns19:ITEM>
+               <ns10:NUMITEM>3</ns10:NUMITEM>
+               <ns10:DNOMBRE>F1BZE111SS      ; CHAQUETA</ns10:DNOMBRE>
+               <ns10:DMARCA>ELLE</ns10:DMARCA>
+               <ns10:DOTRO1>100 VISCOSA, NO PUNTO INCLUYE</ns10:DOTRO1>
+               <ns10:DOTRO2/>
+               <ns10:ATR5/>
+               <ns10:ATR6/>
+               <ns10:SAJUITEM/>
+               <ns10:AJUITEM>0</ns10:AJUITEM>
+               <ns10:CANTMERC>600</ns10:CANTMERC>
+               <ns10:MEDIDA>10</ns10:MEDIDA>
+               <ns10:CODESTUM/>
+               <ns10:PREUNIT>10.58</ns10:PREUNIT>
+               <ns10:ARANCALA>62043900</ns10:ARANCALA>
+               <ns10:NUMCOR>0</ns10:NUMCOR>
+               <ns10:NUMACU>816</ns10:NUMACU>
+               <ns10:CONCUPO>0</ns10:CONCUPO>
+               <ns10:ARANCNAC>62043900</ns10:ARANCNAC>
+               <ns10:CIFITEM>6457.28</ns10:CIFITEM>
+               <ns10:ADVALALA>0.00</ns10:ADVALALA>
+               <ns10:ADVAL>223</ns10:ADVAL>
+               <ns10:VALAD>0.00</ns10:VALAD>
+               <ns10:OBSERVACIONESITEM>
+                  <ns12:OBSERVACIONITEM>
+                     <ns11:CODOBS>99</ns11:CODOBS>
+                     <ns11:DESOBS>00000600.000000 UNIDAD</ns11:DESOBS>
+                  </ns12:OBSERVACIONITEM>
+               </ns10:OBSERVACIONESITEM>
+               <ns10:CUENTASITEM>
+                  <ns14:CUENTAITEM>
+                     <ns13:OTRO>19.00</ns13:OTRO>
+                     <ns13:CTA>178</ns13:CTA>
+                     <ns13:SIGVAL>+</ns13:SIGVAL>
+                     <ns13:VALOR>1226.88</ns13:VALOR>
+                  </ns14:CUENTAITEM>
+               </ns10:CUENTASITEM>
+            </ns19:ITEM>
+            <ns19:ITEM>
+               <ns10:NUMITEM>2</ns10:NUMITEM>
+               <ns10:DNOMBRE>CR1PAY607SS     ; PANTALON</ns10:DNOMBRE>
+               <ns10:DMARCA>APOLOGY</ns10:DMARCA>
+               <ns10:DOTRO1>93 VISCOSA, 7 POLIESTER, NO PU</ns10:DOTRO1>
+               <ns10:DOTRO2/>
+               <ns10:ATR5/>
+               <ns10:ATR6/>
+               <ns10:SAJUITEM/>
+               <ns10:AJUITEM>0</ns10:AJUITEM>
+               <ns10:CANTMERC>204</ns10:CANTMERC>
+               <ns10:MEDIDA>10</ns10:MEDIDA>
+               <ns10:CODESTUM/>
+               <ns10:PREUNIT>7.92</ns10:PREUNIT>
+               <ns10:ARANCALA>62046900</ns10:ARANCALA>
+               <ns10:NUMCOR>0</ns10:NUMCOR>
+               <ns10:NUMACU>816</ns10:NUMACU>
+               <ns10:CONCUPO>0</ns10:CONCUPO>
+               <ns10:ARANCNAC>62046900</ns10:ARANCNAC>
+               <ns10:CIFITEM>1643.49</ns10:CIFITEM>
+               <ns10:ADVALALA>0.00</ns10:ADVALALA>
+               <ns10:ADVAL>223</ns10:ADVAL>
+               <ns10:VALAD>0.00</ns10:VALAD>
+               <ns10:OBSERVACIONESITEM>
+                  <ns12:OBSERVACIONITEM>
+                     <ns11:CODOBS>99</ns11:CODOBS>
+                     <ns11:DESOBS>00000204.000000 UNIDAD</ns11:DESOBS>
+                  </ns12:OBSERVACIONITEM>
+               </ns10:OBSERVACIONESITEM>
+               <ns10:CUENTASITEM>
+                  <ns14:CUENTAITEM>
+                     <ns13:OTRO>19.00</ns13:OTRO>
+                     <ns13:CTA>178</ns13:CTA>
+                     <ns13:SIGVAL>+</ns13:SIGVAL>
+                     <ns13:VALOR>312.26</ns13:VALOR>
+                  </ns14:CUENTAITEM>
+               </ns10:CUENTASITEM>
+            </ns19:ITEM>
+            <ns19:ITEM>
+               <ns10:NUMITEM>1</ns10:NUMITEM>
+               <ns10:DNOMBRE>CR1CAY607SS     ; CHAQUETA</ns10:DNOMBRE>
+               <ns10:DMARCA>APOLOGY</ns10:DMARCA>
+               <ns10:DOTRO1>93 VISCOSA, 7 POLIESTER, NO PU</ns10:DOTRO1>
+               <ns10:DOTRO2/>
+               <ns10:ATR5/>
+               <ns10:ATR6/>
+               <ns10:SAJUITEM/>
+               <ns10:AJUITEM>0</ns10:AJUITEM>
+               <ns10:CANTMERC>261</ns10:CANTMERC>
+               <ns10:MEDIDA>10</ns10:MEDIDA>
+               <ns10:CODESTUM/>
+               <ns10:PREUNIT>10.68</ns10:PREUNIT>
+               <ns10:ARANCALA>62043910</ns10:ARANCALA>
+               <ns10:NUMCOR>0</ns10:NUMCOR>
+               <ns10:NUMACU>816</ns10:NUMACU>
+               <ns10:CONCUPO>0</ns10:CONCUPO>
+               <ns10:ARANCNAC>62043900</ns10:ARANCNAC>
+               <ns10:CIFITEM>2835.47</ns10:CIFITEM>
+               <ns10:ADVALALA>0.00</ns10:ADVALALA>
+               <ns10:ADVAL>223</ns10:ADVAL>
+               <ns10:VALAD>0.00</ns10:VALAD>
+               <ns10:OBSERVACIONESITEM>
+                  <ns12:OBSERVACIONITEM>
+                     <ns11:CODOBS>99</ns11:CODOBS>
+                     <ns11:DESOBS>00000261.000000 UNIDAD</ns11:DESOBS>
+                  </ns12:OBSERVACIONITEM>
+               </ns10:OBSERVACIONESITEM>
+               <ns10:CUENTASITEM>
+                  <ns14:CUENTAITEM>
+                     <ns13:OTRO>19.00</ns13:OTRO>
+                     <ns13:CTA>178</ns13:CTA>
+                     <ns13:SIGVAL>+</ns13:SIGVAL>
+                     <ns13:VALOR>538.74</ns13:VALOR>
+                  </ns14:CUENTAITEM>
+               </ns10:CUENTASITEM>
+            </ns19:ITEM>
+         </ns36:ITEMS>
+         <ns36:VISTOSBUENOS>
+            <ns21:VISTOBUENO>
+               <ns20:NUREGR>0</ns20:NUREGR>
+               <ns20:ANOREG>0</ns20:ANOREG>
+               <ns20:CODVISBUEN/>
+               <ns20:NUMREGLA/>
+               <ns20:NUMANORES/>
+               <ns20:CODULTVB/>
+            </ns21:VISTOBUENO>
+         </ns36:VISTOSBUENOS>
+         <ns36:BULTOS>
+            <ns22:IDBULTOS>TCKU 971.604-4\                                                                 CONT. 225 CAJASCARTON (22)                                                      PARCIAL 9/14 - 7182.40 KGRS</ns22:IDBULTOS>
+            <ns22:BULTO>
+               <ns23:DESTIPBUL>CONT40</ns23:DESTIPBUL>
+               <ns23:TPOBUL>74</ns23:TPOBUL>
+               <ns23:CANTBUL>1</ns23:CANTBUL>
+            </ns22:BULTO>
+         </ns36:BULTOS>
+         <ns36:CUENTASYVALORES>
+            <ns24:MON178>6639.43</ns24:MON178>
+            <ns24:MON191>6639.43</ns24:MON191>
+            <ns24:MON699>0</ns24:MON699>
+            <ns24:MON199>0</ns24:MON199>
+            <ns24:CUENTASGIRO>
+               <ns26:CUENTAGIRO>
+                  <ns25:CTAOTRO>223</ns25:CTAOTRO>
+                  <ns25:MONOTRO>0.00</ns25:MONOTRO>
+               </ns26:CUENTAGIRO>
+               <ns26:CUENTAGIRO>
+                  <ns25:CTAOTRO>0</ns25:CTAOTRO>
+                  <ns25:MONOTRO>0</ns25:MONOTRO>
+               </ns26:CUENTAGIRO>
+               <ns26:CUENTAGIRO>
+                  <ns25:CTAOTRO>0</ns25:CTAOTRO>
+                  <ns25:MONOTRO>0</ns25:MONOTRO>
+               </ns26:CUENTAGIRO>
+               <ns26:CUENTAGIRO>
+                  <ns25:CTAOTRO>0</ns25:CTAOTRO>
+                  <ns25:MONOTRO>0</ns25:MONOTRO>
+               </ns26:CUENTAGIRO>
+               <ns26:CUENTAGIRO>
+                  <ns25:CTAOTRO>0</ns25:CTAOTRO>
+                  <ns25:MONOTRO>0</ns25:MONOTRO>
+               </ns26:CUENTAGIRO>
+               <ns26:CUENTAGIRO>
+                  <ns25:CTAOTRO>0</ns25:CTAOTRO>
+                  <ns25:MONOTRO>0</ns25:MONOTRO>
+               </ns26:CUENTAGIRO>
+               <ns26:CUENTAGIRO>
+                  <ns25:CTAOTRO>0</ns25:CTAOTRO>
+                  <ns25:MONOTRO>0</ns25:MONOTRO>
+               </ns26:CUENTAGIRO>
+               <ns26:CUENTAGIRO>
+                  <ns25:CTAOTRO>0</ns25:CTAOTRO>
+                  <ns25:MONOTRO>0</ns25:MONOTRO>
+               </ns26:CUENTAGIRO>
+            </ns24:CUENTASGIRO>
+         </ns36:CUENTASYVALORES>
+         <ns36:ERRORES>
+            <ns33:ERROR>
+               <ns34:CODIGO>A85</ns34:CODIGO>
+               <ns34:GLOSA>ERROR EN CORRELATIVIDAD DE ITEMES</ns34:GLOSA>
+            </ns33:ERROR>
+            <ns33:ERROR>
+               <ns34:CODIGO>I06</ns34:CODIGO>
+               <ns34:GLOSA>LOS ERRORES ESTAN EN EL ITEM 6</ns34:GLOSA>
+            </ns33:ERROR>
+         </ns36:ERRORES>
+         <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+            <SignedInfo>
+               <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+               <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+               <Reference URI="">
+                  <Transforms>
+                     <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                  </Transforms>
+                  <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                  <DigestValue>WpeUyP+YW3GPu8JvL4WSOFscrBk=</DigestValue>
+               </Reference>
+            </SignedInfo>
+            <SignatureValue>csWCqULdUBJk+L9XDXnn4swUS6nIp6sC4kLPVhauLhrmXv+SgTU0kVCfwkQxaEdsqgxSYf/nRotL
+ZUbFilgXWTjdU3EMmja6obXav6PnEKJqOjGg64qDFv0lQ51V/z16E4uIIZ1VitHt7aMXWVfyBi6D
+pCn4viIbY+LfAwiB1xeN2BElEdnfNxhpvYR+lRVM6rQxPyhLAVXk6pRs01XjNyeQ/oJHAV/tDN5p
+EBh6Oi7N3tkLPYNZOTfsMDNQ60iRxg0HCca1qNGQ2PUmR1uJbppHUHec6U22BCu50r35pyewz3wp
+VVNNRkF4J3DBjcprkBNeI/PVkM994xD9I5oMvA==</SignatureValue>
+            <KeyInfo>
+               <X509Data>
+                  <X509Certificate>MIIF9TCCBN2gAwIBAgIQNKtijoS7hIFnL+Cc8ta/FjANBgkqhkiG9w0BAQsFADB4MQswCQYDVQQG
+EwJJTDEWMBQGA1UEChMNU3RhcnRDb20gTHRkLjEpMCcGA1UECxMgU3RhcnRDb20gQ2VydGlmaWNh
+dGlvbiBBdXRob3JpdHkxJjAkBgNVBAMTHVN0YXJ0Q29tIENsYXNzIDEgRFYgU2VydmVyIENBMB4X
+DTE2MDYxNDE2NTA1MloXDTE3MDYxNDE2NTA1MlowKjELMAkGA1UEBhMCQ0wxGzAZBgNVBAMMEmVy
+b3Nwcm9kLmFkdWFuYS5jbDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANKzLU8QjBxl
+pAejkqfUVJ1M184qPYr3VaQfU9dSvUFh/brJKzq9OVKoZuyy0+Csx/j8CxrqLU70LWr9Uya68qmH
++BAp955ZzY6fGOS6p0ehPtztJhkaXgRzorD5Yb8hA7MsbAbFBuqdmjTFb9/Bht1dJxfl+Ua18VU9
+wswiYeVbDIU+dqiRISRsbPhFRNV0FI7OnkBy99FApKewQXJ9uBeJgXcbEmIVJjPWuA24w/5qe8eg
+myn4Yfb5GHDhMoX3iDrTpeKGedzooL1z+dofAmrHOecxOn2cbwUU2VMOc9EVQZiUIpvcmwAKwfpf
+7jGrJYQoS7mUW1OdbffRF6Soe8MCAwEAAaOCAscwggLDMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUE
+FjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwCQYDVR0TBAIwADAdBgNVHQ4EFgQUIn8xnCiOs0dOSEom
+qfRyAsWny10wHwYDVR0jBBgwFoAU15FOAcSwv/jIZ5NEnOcz+q2TDK8wbwYIKwYBBQUHAQEEYzBh
+MCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5zdGFydHNzbC5jb20wOQYIKwYBBQUHMAKGLWh0dHA6
+Ly9haWEuc3RhcnRzc2wuY29tL2NlcnRzL3NjYS5zZXJ2ZXIxLmNydDA4BgNVHR8EMTAvMC2gK6Ap
+hidodHRwOi8vY3JsLnN0YXJ0c3NsLmNvbS9zY2Etc2VydmVyMS5jcmwwHQYDVR0RBBYwFIISZXJv
+c3Byb2QuYWR1YW5hLmNsMCMGA1UdEgQcMBqGGGh0dHA6Ly93d3cuc3RhcnRzc2wuY29tLzBRBgNV
+HSAESjBIMAgGBmeBDAECATA8BgsrBgEEAYG1NwECBTAtMCsGCCsGAQUFBwIBFh9odHRwczovL3d3
+dy5zdGFydHNzbC5jb20vcG9saWN5MIIBAwYKKwYBBAHWeQIEAgSB9ASB8QDvAHYAaPaY+B9kgr46
+jO65KB1M/HFRXWeT1ETRCmesu09P+8QAAAFVUAJ4tQAABAMARzBFAiAZdrq8a8UvBzg8UdiTdFMW
+O2iYwniHJH0mCxIHrryX8AIhAIvoJCFECts0jsyZzOqNcskH5xjcfETrFn86K9qf2kKLAHUA7ku9
+t3XOYLrhQmkfq+GeZqMPfl+wctiDAMR7iXqo/csAAAFVUAJ6jwAABAMARjBEAh8BBgFRhlPBIuxr
+ecd1blpD7fFIuojqmXg7HYL98QOQAiEAj5Y6kjNuQpCiM4WNoscDKMwYSpvZlzLziJj2FgmVRfAw
+DQYJKoZIhvcNAQELBQADggEBAJpJBJRJ1uU7Icc3XJQKWvJ3osE8UOS+L8M6fdNxyD8IjNXMiOwy
+s46ovFJnemPfXRGGsX0kCRiLp90z9RtCpzevQETMRV3mZNJvzWGf3vUjY8bDvk/MUcK3gyGtOqqJ
+oNbjY1gRsuClr26YCg6FfWAa6hF61Ijt1Z7tybyiDztEI/7+E8aXUyBPmmrdVeokWBX25+KIM+Ll
+Q2Nf5j2YgoGFAdEXd5WdXMQBCaZbTS7Vr5Owg4HRZpG4fABLL6W4dqE3u3CDlZlOOj846HaL3528
+0rBPQHcNXCuNwxSmq8pe2DBl9qOmp7RNkhvXtyE2wCND7J41/53VDNjf+QwPYLU=</X509Certificate>
+               </X509Data>
+               <KeyValue>
+                  <RSAKeyValue>
+                     <Modulus>0rMtTxCMHGWkB6OSp9RUnUzXzio9ivdVpB9T11K9QWH9uskrOr05Uqhm7LLT4KzH+PwLGuotTvQt
+av1TJrryqYf4ECn3nlnNjp8Y5LqnR6E+3O0mGRpeBHOisPlhvyEDsyxsBsUG6p2aNMVv38GG3V0n
+F+X5RrXxVT3CzCJh5VsMhT52qJEhJGxs+EVE1XQUjs6eQHL30UCkp7BBcn24F4mBdxsSYhUmM9a4
+DbjD/mp7x6CbKfhh9vkYcOEyhfeIOtOl4oZ53OigvXP52h8Casc55zE6fZxvBRTZUw5z0RVBmJQi
+m9ybAArB+l/uMaslhChLuZRbU51t99EXpKh7ww==</Modulus>
+                     <Exponent>AQAB</Exponent>
+                  </RSAKeyValue>
+               </KeyValue>
+            </KeyInfo>
+         </Signature>
+      </DIN>
+   </soapenv:Body>
+</soapenv:Envelope>
