@@ -4,7 +4,7 @@ services:
   nginx                   :
     image                 : nginx
     ports                 :
-      - "8080:80"
+      - "9999:80"
     networks              :
       - app_network
     volumes               :
@@ -41,7 +41,7 @@ services:
     networks              :
       - app_network
     ports                 :
-      - "127.0.0.1:3306:3306"
+      - "127.0.0.1:9001:3306"
 
 networks                  :
   app_network             :
