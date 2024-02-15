@@ -2,34 +2,41 @@ version: "3"
 
 services:
   nginx                   :
-    image                 : nginx
+    container_name        : nginx
+    build                 : 
+      context             : .
+      dockerfile          : Dockerfile
+      target              : nginx-symfony
     ports                 :
       - "9999:80"
+    volumes               :
+      - ./code:/code
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
     networks              :
       - app_network
-    volumes               :
-      - ./:/code
-      - ./nginx.conf:/etc/nginx/nginx.conf:ro
     depends_on            :
       - symfony
       
   symfony                 :
+    container_name        : symfony
     build                 : 
       context             : .
       dockerfile          : Dockerfile
-    links                 :
-      - mariadb:mysql
+      target              : symfony
+    volumes               :
+      - ./code:/code
+      - ./docker/nginx.conf:/etc/nginx/nginx.conf:ro
     ports                 :
       - "9000:9000"
+    links                 :
+      - mariadb:mysql
     networks              :
       - app_network
-    volumes               :
-      - ./:/code
     depends_on            :
       - mariadb
 
   mariadb                 :
-    container_name        : mariadb
+    container_name        : mariadb_ejercicio_3
     image                 : mariadb
     restart               : always
     environment           : 

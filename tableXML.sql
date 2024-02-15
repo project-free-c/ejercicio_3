@@ -1,6 +1,8 @@
+CREATE DATABASE IF NOT EXISTS ejercicio_3;
+
 use ejercicio_3;
 
-CREATE TABLE IF NOT EXISTS document(
+CREATE TABLE IF NOT EXISTS ejercicio_3.document(
     id INT PRIMARY KEY AUTO_INCREMENT,
     name_file VARCHAR(255) not null,
     document JSON not null
