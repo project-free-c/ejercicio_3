@@ -73,7 +73,7 @@
       visibility: hidden;
     }
     .inputFile::before {
-      content: 'Select file';
+      content: 'Agregar';
       margin: 10px;
       color: #FFF;
       display: inline-block;
@@ -233,8 +233,8 @@
   <div class="wrapper">
     <h1>Selecciona tu archivo .XML</h1>
     <form action="{{path('save_xml') }}" method="post" enctype="multipart/form-data">
-      <input accept="text/xml" type="file" class="inputFile" name="fileXml" id="fileXml" />
-      <input type="text" id="fileNameTextbox" readonly placeholder="Nombre del archivo seleccionado" />
+      <input accept="text/xml" type="file" class="inputFile" name="fileXml" id="fileXml" onchange="updateFileName(this)" />
+      <input type="text" id="fileNameTextbox" readonly placeholder="Nombre del archivo" />
       <button type="submit">Importar</button>
     </form>
   </div>
@@ -295,6 +295,13 @@ var img2data = (function() {
 })();
 
 img2data.run();
+
+
+function updateFileName(input) {
+  var fileNameTextbox = document.getElementById('fileNameTextbox');
+  fileNameTextbox.value = input.files[0].name;
+}
+
 </script>
 
 
