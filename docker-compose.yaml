@@ -6,12 +6,12 @@ services:
     build                 : 
       context             : .
       dockerfile          : Dockerfile
-      target              : nginx-symfony
-    ports                 :
-      - "9999:80"
+      target              : nginx
     volumes               :
       - ./code:/code
-      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    ports                 :
+      - "9999:80"
     networks              :
       - app_network
     depends_on            :
@@ -25,7 +25,6 @@ services:
       target              : symfony
     volumes               :
       - ./code:/code
-      - ./docker/nginx.conf:/etc/nginx/nginx.conf:ro
     ports                 :
       - "9000:9000"
     links                 :
