@@ -235,7 +235,11 @@
     <form action="{{path('save_xml') }}" method="post" enctype="multipart/form-data">
       <input accept="text/xml" type="file" class="inputFile" name="fileXml" id="fileXml" onchange="updateFileName(this)" />
       <input type="text" id="fileNameTextbox" readonly placeholder="Nombre del archivo" />
-      <button type="submit">Importar</button>
+      <button type="submit">Importar</button>  
+    </form>
+    <form  action="{{path('export_xml') }}" method="post" enctype="multipart/form-data" style="padding-top: 1rem;">
+    <input type="text" id="fileName" placeholder="Nombre del Archivo"/>
+      <button>Exportar</button>
     </form>
   </div>
 
@@ -244,10 +248,10 @@
     {% endif %}  
 
   <script>
+
 var img2data = (function() {
   'use strict';
   return {
-    // ... (Tu código actual)
     convert: function() {
       // vars 
       var fls = this.qS('#files'),
@@ -296,13 +300,26 @@ var img2data = (function() {
 
 img2data.run();
 
-
 function updateFileName(input) {
   var fileNameTextbox = document.getElementById('fileNameTextbox');
   fileNameTextbox.value = input.files[0].name;
 }
 
+/*function exportToXml() {
+    var fileNameInput = document.getElementById('fileName');
+    var fileName = fileNameInput.value || 'exported_data'; // Por defecto 'exported_data' 
+
+    // Construir contenido XML 
+    var xmlContent = '<?xml version="" encoding=""?>' +
+                     '<root>' +
+                     '    <data>--------"JSON"-----</data>' +
+                     '</root>';
+
+    // URL archivo XML
+    var link = document.createElement('a');
+    link.href = 'data:text/xml;charset=utf-8,' + encodeURIComponent(xmlContent);
+    link.download = fileName + '.xml';
+}*/
+
 </script>
-
-
 {% endblock %}

@@ -7,6 +7,7 @@ FROM php:7.1-fpm as symfony
     # RUN chmod -R 775 /code/app
     # RUN chmod -R 777 /code/app
     WORKDIR /code
+    #RUN composer install
 
 FROM mariadb:latest as databases
     COPY tableXML.sql /docker-entrypoint-initdb.d/
